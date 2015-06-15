@@ -26,6 +26,9 @@
 		44F3901218B3F4650012314D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44F3901018B3F4650012314D /* InfoPlist.strings */; };
 		44F3901418B3F4650012314D /* TeamMemberSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F3901318B3F4650012314D /* TeamMemberSpec.m */; };
 		681A6BADA8204C118F67A027 /* libPods-NavigationControllersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B110E9DA3FF433A96E2A505 /* libPods-NavigationControllersTests.a */; };
+		803FBF5A1B2F0BE800287084 /* TeamMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FBF591B2F0BE800287084 /* TeamMember.m */; };
+		803FBF5D1B2F0C0600287084 /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FBF5C1B2F0C0600287084 /* TeamViewController.m */; };
+		803FBF631B2F413600287084 /* TeamDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FBF621B2F413600287084 /* TeamDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +66,12 @@
 		44F3900F18B3F4650012314D /* NavigationControllersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationControllersTests-Info.plist"; sourceTree = "<group>"; };
 		44F3901118B3F4650012314D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44F3901318B3F4650012314D /* TeamMemberSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamMemberSpec.m; sourceTree = "<group>"; };
-		44F3901D18B3F4B40012314D /* TeamMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamMember.h; sourceTree = "<group>"; };
-		44F3901E18B3F4B40012314D /* TeamMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamMember.m; sourceTree = "<group>"; };
-		44F3902018B3F67A0012314D /* TeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamViewController.h; sourceTree = "<group>"; };
-		44F3902118B3F67A0012314D /* TeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamViewController.m; sourceTree = "<group>"; };
-		44F3902318B3F6890012314D /* TeamDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamDetailViewController.h; sourceTree = "<group>"; };
-		44F3902418B3F6890012314D /* TeamDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamDetailViewController.m; sourceTree = "<group>"; };
+		803FBF581B2F0BE800287084 /* TeamMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamMember.h; sourceTree = "<group>"; };
+		803FBF591B2F0BE800287084 /* TeamMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamMember.m; sourceTree = "<group>"; };
+		803FBF5B1B2F0C0600287084 /* TeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamViewController.h; sourceTree = "<group>"; };
+		803FBF5C1B2F0C0600287084 /* TeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamViewController.m; sourceTree = "<group>"; };
+		803FBF611B2F413600287084 /* TeamDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamDetailViewController.h; sourceTree = "<group>"; };
+		803FBF621B2F413600287084 /* TeamDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamDetailViewController.m; sourceTree = "<group>"; };
 		C8F9E5DF606C723879D1934D /* Pods-NavigationControllersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationControllersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationControllersTests/Pods-NavigationControllersTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +137,12 @@
 			children = (
 				44F38FF718B3F4650012314D /* AppDelegate.h */,
 				44F38FF818B3F4650012314D /* AppDelegate.m */,
+				803FBF581B2F0BE800287084 /* TeamMember.h */,
+				803FBF591B2F0BE800287084 /* TeamMember.m */,
+				803FBF5B1B2F0C0600287084 /* TeamViewController.h */,
+				803FBF5C1B2F0C0600287084 /* TeamViewController.m */,
+				803FBF611B2F413600287084 /* TeamDetailViewController.h */,
+				803FBF621B2F413600287084 /* TeamDetailViewController.m */,
 				44F38FFA18B3F4650012314D /* Main.storyboard */,
 				44F3900018B3F4650012314D /* Images.xcassets */,
 				44F38FEF18B3F4650012314D /* Supporting Files */,
@@ -320,8 +329,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803FBF631B2F413600287084 /* TeamDetailViewController.m in Sources */,
 				44F38FF918B3F4650012314D /* AppDelegate.m in Sources */,
+				803FBF5D1B2F0C0600287084 /* TeamViewController.m in Sources */,
 				44F38FF518B3F4650012314D /* main.m in Sources */,
+				803FBF5A1B2F0BE800287084 /* TeamMember.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
